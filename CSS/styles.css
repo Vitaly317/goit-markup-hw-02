@@ -1,37 +1,60 @@
-a {
-    text-decoration: none;
-  }
-/* Псевдоклассы состояния */
-  .link {
-    color: teal;
-  }
-/* :hover Активируется когда курсор мыши находится в пределах элемента */
-  .link:hover {
-    color: tomato;
-  }
-  /* :focus Активируется когда интерактивный элемент
-  получает фокус при навигации по странице клавиатурой (клавишей Tab). */
-  .link:focus {
-    color: orange;
-  }
-  /* :active Происходит при активации элемента. */
-  .link:active {
-    color: red;
-  }
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196F3;
+  --accent-color-second: #ffffff;
+  --footer-color: #FFFFFF;
 
-  /* :visited активируется на ссылках, которые уже были посещены. */
-  .link:visited {
-    color: green;
-  } 
+}
 
-  .none {
-    cursor: none;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #FFFFFF; 
+  color: var(--primary-text-color);
 
-  .default {
-    cursor: default;
-  }
+}
 
-  .pointer {
-    cursor: pointer;
-  }
+a{
+  /* настледует цвет шрифта от родителя */
+  color: inherit;
+  /* Убрали подчёркивание нижнее */
+  text-decoration: none;
+}
+.header {
+background: var(--footer-color);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+
+footer {
+
+}
+
+li {
+  list-style: none;
+}
+.button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 4px;
+  background: #F5F4FA;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  color: var(--accent-color-second);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
