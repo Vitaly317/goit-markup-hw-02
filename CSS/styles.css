@@ -15,8 +15,22 @@
 body {
   background-color: #FFFFFF; 
   color: var(--primary-text-color);
+  font-family:'Roboto','Open Sans', sans-serif;
+  
 
 }
+
+  
+  /* Header */
+  .header {
+  background: var(--footer-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  /* text-align: left; */
+  }
 
 .link{
   /* настледует цвет шрифта от родителя */
@@ -24,38 +38,92 @@ body {
   /* Убрали подчёркивание нижнее */
   text-decoration: none;
 }
-.header {
-background: var(--footer-color);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 16px;
-letter-spacing: 0.02em;
-text-align: left;
 
+.link:hover,
+.link:focus{
+  color: var(--accent-color);
+}
+.acctive{
+  color: var(--accent-color);
 }
 
-/* footer {
-
-} */
+/* Foorer */
 
 .list {
   list-style: none;
-}
+ }
 .button {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   border-radius: 4px;
   background: #F5F4FA;
+  color: var(--primary-text-color);
+  border-width: 0vw;
+  padding: 6px 22px;
+  cursor:pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--accent-color);
   color: var(--accent-color-second);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  
 }
 
+.title{
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+
+/* Test */
+.site-nav .link {
+  text-transform:;
+}
+
+.text > span {
+  text-decoration: line-through;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.post-title {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+} 
+
+.post-text {
+  text-indent: 100px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.post-title {
+  letter-spacing: 10px;
+}
+
+.post-text {
+  letter-spacing: 5px;
+}
+.title {
+  color: #ffffff;
+  text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
+}
+/* Test */
