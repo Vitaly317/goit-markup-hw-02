@@ -8,6 +8,8 @@
   --section-one-color: #2F303A;
   --body-color-second: #F5F4FA;
   --color-black: #000000;
+  --footer-color: #2F303A;
+  --footer-color-list: rgba(255, 255, 255, 0.6);
 
 }
 /* * {
@@ -154,4 +156,27 @@ text-transform: uppercase;
 
 .title.text{
   font-weight: 400;
+}
+.portfolio .title{
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio .text{
+  line-height: 1.87;
+}
+
+/* Footer */
+.footer{
+  background-color: var(--footer-color);
+  color: var(--accent-color-second);
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+
+}
+.footer .list {
+  color: var(--footer-color-list);
+
 }
