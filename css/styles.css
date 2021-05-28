@@ -73,9 +73,6 @@ body {
   padding-bottom: 280px; */
 }
 
-
-/* Footer */
-
 .list {
   list-style: none;
 }
@@ -106,12 +103,25 @@ body {
   margin: auto;
 }
 
-.title{
+.text{
   color: var(--title-text-color);
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-/* .text {
-
-} */
+.title{
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+.section-what-we-do .title {
+text-transform: uppercase;
+}
+.what-we-do{
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
