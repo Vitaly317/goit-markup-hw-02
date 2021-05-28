@@ -6,6 +6,8 @@
   --header-footer-color: #FFFFFF;
   --body-color: #FFFFFF;
   --section-one-color: #2F303A;
+  --body-color-second: #F5F4FA;
+  --color-black: #000000;
 
 }
 /* * {
@@ -31,19 +33,23 @@ body {
   letter-spacing: 0.02em;
 }
 
-.logo{
-  font-family: Raleway, sans-serif;
-  font-weight: 700; 
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
 
 .link{
   /* настледует цвет шрифта от родителя */
   color: inherit;
   /* Убрали подчёркивание нижнее */
   text-decoration: none;
+}
+.logo{
+  font-family: Raleway, sans-serif;
+  font-weight: 700; 
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.accent-logo {
+  color: var(--color-black);
 }
 
 .link:hover,
@@ -57,7 +63,7 @@ body {
   color: var(--title-text-color);
 }
 /* Main */
-.section-one{
+.section-hero{
   background-color: var(--section-one-color);
 
 }
@@ -105,7 +111,7 @@ body {
 
 .text{
   color: var(--title-text-color);
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -119,9 +125,33 @@ body {
 .section-what-we-do .title {
 text-transform: uppercase;
 }
-.what-we-do{
+.what-we-do,
+.teams{
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+}
+.section-teams{
+  background-color: var(--body-color-second);
+}
+.catrs {
+  background-color: var(--body-color);
+  text-align: center;
+  width: 270px;
+  height: 368px;  
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.section-teams .title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  /* text-align: center; */
+}
+
+.title.text{
+  font-weight: 400;
 }
