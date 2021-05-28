@@ -10,7 +10,7 @@
   --color-black: #000000;
   --footer-color: #2F303A;
   --footer-color-list: rgba(255, 255, 255, 0.6);
-
+  --items-border: #EEEEEE;
 }
 /* * {
   box-sizing: border-box;
@@ -156,6 +156,14 @@ text-transform: uppercase;
 
 .title.text{
   font-weight: 400;
+}
+
+.portfolio .items {
+  background: var(--body-color);
+  border: 1px solid var(--items-border);
+  box-sizing: border-box;
+  width: 370px;
+  height: 404px;    
 }
 .portfolio .title{
   font-size: 18px;
